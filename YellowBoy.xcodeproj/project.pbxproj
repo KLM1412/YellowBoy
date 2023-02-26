@@ -15,6 +15,8 @@
 		07796A3D29A83F7A0085C4D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07796A3B29A83F7A0085C4D8 /* LaunchScreen.storyboard */; };
 		07796A4729A894170085C4D8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796A4629A894170085C4D8 /* HomeVC.swift */; };
 		07796A4929A894350085C4D8 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796A4829A894350085C4D8 /* DiscoveryVC.swift */; };
+		07796A4B29AB8AFE0085C4D8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 07796A4A29AB8AFE0085C4D8 /* Podfile */; };
+		711CAD899F2E625E8564E8F5 /* Pods_YellowBoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDCFB28241B6F0C8A902B3A /* Pods_YellowBoy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		07796A4529A840040085C4D8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		07796A4629A894170085C4D8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		07796A4829A894350085C4D8 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		07796A4A29AB8AFE0085C4D8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACB3E46A5F36E47A9D0622DA /* Pods-YellowBoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowBoy.release.xcconfig"; path = "Target Support Files/Pods-YellowBoy/Pods-YellowBoy.release.xcconfig"; sourceTree = "<group>"; };
+		EAC91FBAF1F6892C482394E7 /* Pods-YellowBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowBoy.debug.xcconfig"; path = "Target Support Files/Pods-YellowBoy/Pods-YellowBoy.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDCFB28241B6F0C8A902B3A /* Pods_YellowBoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowBoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711CAD899F2E625E8564E8F5 /* Pods_YellowBoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				07796A2C29A83F780085C4D8 /* YellowBoy */,
 				07796A2B29A83F780085C4D8 /* Products */,
+				C3322BBD4A1F152F98036C7D /* Pods */,
+				5F0F2FC26136F9B5779C2282 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +79,27 @@
 				07796A3929A83F7A0085C4D8 /* Assets.xcassets */,
 				07796A3B29A83F7A0085C4D8 /* LaunchScreen.storyboard */,
 				07796A3E29A83F7A0085C4D8 /* Info.plist */,
+				07796A4A29AB8AFE0085C4D8 /* Podfile */,
 				07796A3629A83F780085C4D8 /* YellowBoy.xcdatamodeld */,
 			);
 			path = YellowBoy;
+			sourceTree = "<group>";
+		};
+		5F0F2FC26136F9B5779C2282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEDCFB28241B6F0C8A902B3A /* Pods_YellowBoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3322BBD4A1F152F98036C7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAC91FBAF1F6892C482394E7 /* Pods-YellowBoy.debug.xcconfig */,
+				ACB3E46A5F36E47A9D0622DA /* Pods-YellowBoy.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07796A4129A83F7A0085C4D8 /* Build configuration list for PBXNativeTarget "YellowBoy" */;
 			buildPhases = (
+				D3028AB0C360473D7998D8F1 /* [CP] Check Pods Manifest.lock */,
 				07796A2629A83F780085C4D8 /* Sources */,
 				07796A2729A83F780085C4D8 /* Frameworks */,
 				07796A2829A83F780085C4D8 /* Resources */,
+				61D39DCE5F8BA39B21458224 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,11 +165,54 @@
 			files = (
 				07796A3D29A83F7A0085C4D8 /* LaunchScreen.storyboard in Resources */,
 				07796A3A29A83F7A0085C4D8 /* Assets.xcassets in Resources */,
+				07796A4B29AB8AFE0085C4D8 /* Podfile in Resources */,
 				07796A3529A83F780085C4D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61D39DCE5F8BA39B21458224 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YellowBoy/Pods-YellowBoy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YellowBoy/Pods-YellowBoy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YellowBoy/Pods-YellowBoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3028AB0C360473D7998D8F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YellowBoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07796A2629A83F780085C4D8 /* Sources */ = {
@@ -297,6 +369,7 @@
 		};
 		07796A4229A83F7A0085C4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC91FBAF1F6892C482394E7 /* Pods-YellowBoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,7 +384,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +400,7 @@
 		};
 		07796A4329A83F7A0085C4D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB3E46A5F36E47A9D0622DA /* Pods-YellowBoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,7 +415,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
