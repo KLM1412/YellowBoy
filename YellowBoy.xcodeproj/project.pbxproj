@@ -16,6 +16,11 @@
 		07796A4729A894170085C4D8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796A4629A894170085C4D8 /* HomeVC.swift */; };
 		07796A4929A894350085C4D8 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07796A4829A894350085C4D8 /* DiscoveryVC.swift */; };
 		07796A4B29AB8AFE0085C4D8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 07796A4A29AB8AFE0085C4D8 /* Podfile */; };
+		07C8E09B29AC847900121B39 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8E09A29AC847900121B39 /* FollowVC.swift */; };
+		07C8E09D29AC84BB00121B39 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8E09C29AC84BB00121B39 /* NearbyVC.swift */; };
+		07C8E09F29AC860800121B39 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8E09E29AC860800121B39 /* Constans.swift */; };
+		07C8E0A229ACE80D00121B39 /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8E0A129ACE80D00121B39 /* WaterFallVC.swift */; };
+		07C8E0A429ACED3400121B39 /* WaterFallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8E0A329ACED3400121B39 /* WaterFallCell.swift */; };
 		711CAD899F2E625E8564E8F5 /* Pods_YellowBoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDCFB28241B6F0C8A902B3A /* Pods_YellowBoy.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		07796A4629A894170085C4D8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		07796A4829A894350085C4D8 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		07796A4A29AB8AFE0085C4D8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07C8E09A29AC847900121B39 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		07C8E09C29AC84BB00121B39 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		07C8E09E29AC860800121B39 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		07C8E0A129ACE80D00121B39 /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
+		07C8E0A329ACED3400121B39 /* WaterFallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaterFallCell.swift; path = "/Users/kid/IOS Developer/YellowBoy/YellowBoy/Home/WaterFallCell.swift"; sourceTree = "<absolute>"; };
 		ACB3E46A5F36E47A9D0622DA /* Pods-YellowBoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowBoy.release.xcconfig"; path = "Target Support Files/Pods-YellowBoy/Pods-YellowBoy.release.xcconfig"; sourceTree = "<group>"; };
 		EAC91FBAF1F6892C482394E7 /* Pods-YellowBoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowBoy.debug.xcconfig"; path = "Target Support Files/Pods-YellowBoy/Pods-YellowBoy.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDCFB28241B6F0C8A902B3A /* Pods_YellowBoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowBoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07097BAF29AEED5A00B69E55 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				07C8E0A129ACE80D00121B39 /* WaterFallVC.swift */,
+				07C8E0A329ACED3400121B39 /* WaterFallCell.swift */,
+			);
+			path = WaterFall;
+			sourceTree = "<group>";
+		};
+		07097BB029AEED7000B69E55 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07C8E09E29AC860800121B39 /* Constans.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		07796A2129A83F780085C4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +98,8 @@
 		07796A2C29A83F780085C4D8 /* YellowBoy */ = {
 			isa = PBXGroup;
 			children = (
-				07796A4629A894170085C4D8 /* HomeVC.swift */,
-				07796A4829A894350085C4D8 /* DiscoveryVC.swift */,
+				07097BAF29AEED5A00B69E55 /* WaterFall */,
+				07C8E0A029ACE75C00121B39 /* Home */,
 				07796A2D29A83F780085C4D8 /* AppDelegate.swift */,
 				07796A2F29A83F780085C4D8 /* SceneDelegate.swift */,
 				07796A3329A83F780085C4D8 /* Main.storyboard */,
@@ -81,8 +108,20 @@
 				07796A3E29A83F7A0085C4D8 /* Info.plist */,
 				07796A4A29AB8AFE0085C4D8 /* Podfile */,
 				07796A3629A83F780085C4D8 /* YellowBoy.xcdatamodeld */,
+				07097BB029AEED7000B69E55 /* Common */,
 			);
 			path = YellowBoy;
+			sourceTree = "<group>";
+		};
+		07C8E0A029ACE75C00121B39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07796A4629A894170085C4D8 /* HomeVC.swift */,
+				07796A4829A894350085C4D8 /* DiscoveryVC.swift */,
+				07C8E09A29AC847900121B39 /* FollowVC.swift */,
+				07C8E09C29AC84BB00121B39 /* NearbyVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		5F0F2FC26136F9B5779C2282 /* Frameworks */ = {
@@ -223,7 +262,12 @@
 				07796A3829A83F780085C4D8 /* YellowBoy.xcdatamodeld in Sources */,
 				07796A4729A894170085C4D8 /* HomeVC.swift in Sources */,
 				07796A2E29A83F780085C4D8 /* AppDelegate.swift in Sources */,
+				07C8E0A429ACED3400121B39 /* WaterFallCell.swift in Sources */,
 				07796A3029A83F780085C4D8 /* SceneDelegate.swift in Sources */,
+				07C8E09F29AC860800121B39 /* Constans.swift in Sources */,
+				07C8E09B29AC847900121B39 /* FollowVC.swift in Sources */,
+				07C8E0A229ACE80D00121B39 /* WaterFallVC.swift in Sources */,
+				07C8E09D29AC84BB00121B39 /* NearbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
